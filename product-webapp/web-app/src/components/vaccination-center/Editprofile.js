@@ -20,7 +20,7 @@ function EditProfile() {
 
     const getUserDetailsById = (id) => {
         // var url = "http://localhost:8080/user-service/api/v1/vaccination-center/" + id;
-        var url = "http://44.207.171.169:8080/user-service/api/v1/vaccination-center/" + id;
+        var url = "http://35.170.142.59:8080/user-service/api/v1/vaccination-center/" + id;
         return fetch(url,
             {
                 headers: {
@@ -272,7 +272,7 @@ function updateUserDetails(user) {
     console.log(updatedUser)
     // var url = "http://localhost:8080/user-service/api/v1/vaccination-center/" + user.centerId;
 
-    var url = "http://44.207.171.169:8080/user-service/api/v1/vaccination-center/" + user.centerId;
+    var url = "http://35.170.142.59:8080/user-service/api/v1/vaccination-center/" + user.centerId;
 
     return fetch(url,
         {

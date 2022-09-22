@@ -24,7 +24,7 @@ function Profile() {
     const getUserData = () => {
         var emailId = localStorage.getItem("userEmailId");
         // let url = "http://localhost:8080/user-service/api/v1/user/user/" + emailPass ;
-        let url = "http://44.207.171.169:8080/user-service/api/v1/user/user/" + emailPass ;
+        let url = "http://35.170.142.59:8080/user-service/api/v1/user/user/" + emailPass ;
         return fetch(url, {headers:{
         'Content-Type': 'application/json',
         'Accept': 'application/json'
@@ -50,7 +50,7 @@ function Profile() {
     }
     function fetchBookedSlot(data) {
         // let url = "http://localhost:8080/slot-booking-service/api/v1/getByUserEmail/" + emailPass;
-        let url = "http://44.207.171.169:8080/slot-booking-service/api/v1/getByUserEmail/" + emailPass;
+        let url = "http://35.170.142.59:8080/slot-booking-service/api/v1/getByUserEmail/" + emailPass;
         axios.get(url).then(res=>{
           var vdata = res.data;
           if(vdata.slot.status == "BOOKED"){
